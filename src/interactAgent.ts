@@ -354,7 +354,7 @@ async function interactAgent(agentName: string, question: string): Promise<void>
 
 const args = process.argv.slice(2);
 if (args.length < 3 || args[1] !== "ask") {
-  console.error('Usage: npm run interactqude {agent_name} ask "Your question"');
+  console.error('Usage: npm run interactcyn {agent_name} ask "Your question"');
   process.exit(1);
 }
 

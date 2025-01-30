@@ -1,14 +1,14 @@
 {
-    "name": "qudeai-framework",
+    "name": "cynai-framework",
     "version": "1.0.0",
-    "description": "qudeai agent framework",
+    "description": "cynai agent framework",
     "type": "module",
     "main": "src/defineagent.ts",
     "scripts": {
-        "interactqude": "npm run build > /dev/null 2>&1 && node --no-deprecation dist/interactAgent.js",
-        "deployqude": "npm run build --silent > /dev/null 2>&1 && node --no-deprecation dist/deployAgent.js",
-        "askqude": "npm run build --silent > /dev/null 2>&1 && node --no-deprecation dist/askAgent.js",
-        "qude-trade": "node --no-deprecation dist/trade.js",
+        "interactcyn": "npm run build > /dev/null 2>&1 && node --no-deprecation dist/interactAgent.js",
+        "deploycyn": "npm run build --silent > /dev/null 2>&1 && node --no-deprecation dist/deployAgent.js",
+        "askcyn": "npm run build --silent > /dev/null 2>&1 && node --no-deprecation dist/askAgent.js",
+        "cyn-trade": "node --no-deprecation dist/trade.js",
         "build": "tsc"
     },
     "dependencies": {

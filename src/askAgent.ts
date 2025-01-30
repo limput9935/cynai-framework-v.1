@@ -35,7 +35,7 @@ async function validateAgentAndRespond(agentName: string, userMessage: string) {
 
 const args = process.argv.slice(2);
 if (args.length < 2) {
-  console.error('Usage: npm run askqude {agent_name} "Your message here"');
+  console.error('Usage: npm run askcyn {agent_name} "Your message here"');
   process.exit(1);
 }
 

@@ -1,6 +1,6 @@
-# Contributing to QudeAI Framework
+# Contributing to cynAI Framework
 
-Thank you for considering contributing to the QudeAI Framework! We welcome contributions from the community to help improve and expand the project.
+Thank you for considering contributing to the cynAI Framework! We welcome contributions from the community to help improve and expand the project.
 
 ## How to Contribute
 
@@ -15,5 +15,5 @@ If you find a bug or have a feature request, please open an issue in the GitHub 
 1. Fork this repository by clicking the "Fork" button at the top-right corner of the GitHub page.
 2. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/qudeai/qudeai-framework-v.1](https://github.com/qudeai/qudeai-framework-v.1.git)
-   cd qudeai-framework-v.1
+   git clone [https://github.com/cynai/cynai-framework-v.1](https://github.com/cynai/cynai-framework-v.1.git)
+   cd cynai-framework-v.1

@@ -1,8 +1,8 @@
 
-![Logo](https://res.cloudinary.com/docg651du/image/upload/v1736615346/tnibkgr76euzcbhvqir1.png)
+![Logo](./final.png)
 
-# QudeAI Agent Framework
-##### The Qude Framework open-source code allows users to create AI agents directly in their CLI, with Qude acting as a co-pilot to help build them. The Qude API enables interaction with the AI agents created using the Qude Framework's open-source code.
+# cynAI Agent Framework
+##### The cyn Framework open-source code allows users to create AI agents directly in their CLI, with cyn acting as a co-pilot to help build them. The cyn API enables interaction with the AI agents created using the cyn Framework's open-source code.
 
 ### 🌟 Key Features
 - Agent Deployment: Deploy custom AI agents onto the Solana blockchain.
@@ -28,8 +28,8 @@
 ### Installation 
 1. Clone the repository
 ``` bash 
-git clone https://github.com/qudeai/qudeai-framework-v.1.git
-cd qudeai-framework-v.1
+git clone https://github.com/cynai/cynai-framework-v.1.git
+cd cynai-framework-v.1
 ```
 2. Install dependencies:
 ``` bash
@@ -51,11 +51,11 @@ npm run build
 ## 📜 Available Commands
 1. Ask Queries to an Agent:
 ```bash
-npm run askqude {agentName} {yourQuestion}
+npm run askcyn {agentName} {yourQuestion}
 ```
    - example
    ```bash
-   npm run askqude Aura "What is the market cap of Solana?"
+   npm run askcyn Aura "What is the market cap of Solana?"
 ```
 2. Deploy an Agent or Token:
 - Go to defineAgent.ts and replace placeholders as you want. 
@@ -64,49 +64,49 @@ npm run askqude {agentName} {yourQuestion}
 npm run build 
 ```
 ```bash
-npm run deployqude
+npm run deploycyn
 ```
 - Deploys a new agent or token to the Solana blockchain.
 
 3. Interact with an Agent:
 ```bash
-npm run interactqude {agent_name} ask "Your question"
+npm run interactcyn {agent_name} ask "Your question"
 ```
 - Example 
 ```bash
-npm run interactqude Aura ask "Trending token 24h"
+npm run interactcyn Aura ask "Trending token 24h"
 ```
 4. Fetch Trending Tokens:
 ```bash 
-npm run interactqude Aura ask "Trending token 24h"
+npm run interactcyn Aura ask "Trending token 24h"
 ```
 5. Fetch Top Token Holders:
 ```bash
-npm run interactqude Aura ask "Top holders: {mintAddress}"
+npm run interactcyn Aura ask "Top holders: {mintAddress}"
 ```
 - Example 
 ```bash
-npm run interactqude Aura ask "Top holders: 6LKbpcg2fQ84Ay3kKXVyo3bHUGe3s36g9EVbKYSupump"
+npm run interactcyn Aura ask "Top holders: 6LKbpcg2fQ84Ay3kKXVyo3bHUGe3s36g9EVbKYSupump"
 ```
 6. Fetch Market Cap Data:
 ```bash
-npm run interactqude Aura ask "Marketcap count:{count} term:\"{term}\""
+npm run interactcyn Aura ask "Marketcap count:{count} term:\"{term}\""
 ``` 
 - Example
 ```bash
-npm run interactqude Aura ask "Marketcap count:50 term:\"pump\""
+npm run interactcyn Aura ask "Marketcap count:50 term:\"pump\""
 ```
 7. Fetch First Top Buyers:
 ```bash
-npm run interactqude {agentName} ask "First top {count} buyers for: {mintAddress}"
+npm run interactcyn {agentName} ask "First top {count} buyers for: {mintAddress}"
 ```
 - Example 
 ```bash 
-npm run interactqude Aura ask "First top 10 buyers for: 6LKbpcg2fQ84Ay3kKXVyo3bHUGe3s36g9EVbKYSupump"
+npm run interactcyn Aura ask "First top 10 buyers for: 6LKbpcg2fQ84Ay3kKXVyo3bHUGe3s36g9EVbKYSupump"
 ```
 8. Trade tokens
 ```bash 
-npm run qude-trade {agent_name}
+npm run cyn-trade {agent_name}
 ```
 ## Dependencies
 
@@ -138,10 +138,10 @@ The project utilizes the following development dependencies:
 #### The framework comes with several npm scripts for ease of use:
 
 - `npm run build`: Transpile TypeScript to JavaScript.
-- `npm run askqude`: Ask general questions to your AI agents.
-- `npm run deployqude`: Deploy a new agent to the Solana blockchain.
-- `npm run interactqude`: Interact with deployed agents using queries.
-- `npm run qude-trade`: Trade tokens on solana blockchain.
+- `npm run askcyn`: Ask general questions to your AI agents.
+- `npm run deploycyn`: Deploy a new agent to the Solana blockchain.
+- `npm run interactcyn`: Interact with deployed agents using queries.
+- `npm run cyn-trade`: Trade tokens on solana blockchain.
 
 ## 🔧 How It Works
 - Firebase Integration: Provides secure storage and retrieval of agent-related data.
@@ -149,13 +149,13 @@ The project utilizes the following development dependencies:
 - Command Parsing: Processes user commands to route them to the appropriate functionality.
 - Customizable Framework: Modify or extend the framework to suit your specific needs.
 
-# USING api.qude.ai API
+# USING api.cyn.ai API
 
 ## Prerequisites
 
 To use the API, ensure you have the following:
 
-1. **API Access**: The API is publicly available at [api.qude.ai](https://api.qude.ai).
+1. **API Access**: The API is publicly available at [api.cyn.ai](https://api.cyn.ai).
 2. **API Client**: Use a tool like `curl`, Postman, or any HTTP client library in your preferred programming language.
 
 ---
@@ -163,13 +163,13 @@ To use the API, ensure you have the following:
 ## API Endpoints
 
 ### 1. Fetch Agent Details
-Retrieve metadata about an agent from the official Qude Framework database.
+Retrieve metadata about an agent from the official cyn Framework database.
 
 **GET** `/api/agent/:name`
 
 #### Request Example:
 ```bash
-curl https://api.qude.ai/api/agent/Aura
+curl https://api.cyn.ai/api/agent/Aura
 ```
 **Response Example:**
 ```bash
@@ -186,7 +186,7 @@ Send a message to an agent and receive an AI-generated response using query para
 
 **Request Example:**
 ```bash
-curl "https://api.qude.ai/api/agent/Aura/interact?message=Hello!"
+curl "https://api.cyn.ai/api/agent/Aura/interact?message=Hello!"
 ```
 **Response Example:**
 ```bash
@@ -202,7 +202,7 @@ Send a message to an agent and receive an AI-generated response using a JSON pay
 
 **Request Example:**
 ```bash
-curl -X POST "https://api.qude.ai/api/agent/Aura/interact" \
+curl -X POST "https://api.cyn.ai/api/agent/Aura/interact" \
 -H "Content-Type: application/json" \
 -d '{"message": "Hello, Aura"}'
 ```
@@ -219,7 +219,7 @@ Here’s how you can interact with the API programmatically:
 const fetch = require("node-fetch");
 
 async function interactWithAgent(agentName, message) {
-  const response = await fetch(`https://api.qude.ai/api/agent/${agentName}/interact`, {
+  const response = await fetch(`https://api.cyn.ai/api/agent/${agentName}/interact`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message }),
@@ -237,9 +237,9 @@ async function interactWithAgent(agentName, message) {
 interactWithAgent("Aura", "Hello there!");
 ```
 
-## Notes for api.qude.ai
+## Notes for api.cyn.ai
 - No Local Setup Required: This API is fully hosted and ready to use—no Firebase setup or service account keys needed.
-- Agent Metadata: All agent information is sourced directly from the official Qude Framework database.
+- Agent Metadata: All agent information is sourced directly from the official cyn Framework database.
 
 ## 🤝 Contribution
 We welcome contributions! To get started:

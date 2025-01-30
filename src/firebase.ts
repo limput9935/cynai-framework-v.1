@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-const BACKEND_URL = "https://api.qude.ai/";
+const BACKEND_URL = "https://api.cyn.ai/";
 
 export async function checkAgentExists(agentName: string): Promise<boolean> {
   try {
@@ -37,7 +37,7 @@ export async function storeAgent(agentName: string, agentDetails: any): Promise<
 
 export async function getAgentData(agentName: string): Promise<{ personality: string } | null> {
   try {
-    const response = await fetch(`https://api.qude.ai/api/agent/${agentName}`);
+    const response = await fetch(`https://api.cyn.ai/api/agent/${agentName}`);
     if (!response.ok) {
       throw new Error(`Error fetching agent data: ${response.statusText}`);
     }
@@ -45,7 +45,7 @@ export async function getAgentData(agentName: string): Promise<{ personality: st
     const data = (await response.json()) as { personality: string };
     return data;
   } catch (error) {
-    console.error("Error fetching agent data from api.qude.ai:", (error as Error).message);
+    console.error("Error fetching agent data from api.cyn.ai:", (error as Error).message);
     return null;
   }
 }
